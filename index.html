@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Chủ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #menutrai {
+      font-size: 13px;
+    }
+
+    #menutrai ul {
+      margin-right: 10px;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+
+    #menutrai ul li {
+      margin-left: 10px;
+    }
+
+    a.menutrai:link {
+      color: #fd1616;
+      text-decoration: none;
+    }
+
+    a.menutrai:visited {
+      color: #b22d30;
+      font-weight: 700;
+    }
+
+    a.menutrai:hover {
+      color: #5426d1;
+    }
+
+    a.menutrai:active {
+      color: #190c3f;
+    }
+
+    /* MENU NGANG */
+    #menungang {
+      display: flex;
+      justify-content: space-evenly; /* 👈 Căng đều các mục */
+      align-items: center;
+      background-color: #b22d30;
+      height: 52px;
+      padding: 0 20px;
+    }
+
+    #menungang a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    #menungang a:hover {
+      background-color: #fff;
+      color: #b22d30;
+      border-radius: 5px;
+    }
+
+    /* Phần banner */
+    #banner {
+      height: 126px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    #divmenutrai ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+    }
+
+    #divmenutrai li {
+      margin-right: 15px;
+    }
+
+    #header {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      background-color: aqua;
+    }
+
+    img {
+      max-height: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <!-- Banner -->
+    <div id="banner">
+      <div id="divmenutrai">
+        <nav id="menutrai">
+          <ul>
+            <li><a href="https://www.kthcm.edu.vn/" class="menutrai">TRANG CHỦ</a></li>
+            <li><a class="menutrai">EGOV</a></li>
+            <li><a class="menutrai">SINH VIÊN</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div style="flex: 1; text-align: center;">
+        <img src="images/Ten-truong-do-1000x159.png" alt="Logo trường" width="500" height="80"/>
+      </div>
+      <div>
+        Tìm kiếm
+      </div>
+    </div>
+
+    <!-- Menu ngang -->
+    <div id="menubar">
+      <nav id="menungang">
+        <a class="menutrai" href="#">GIỚI THIỆU</a>
+        <a class="menutrai" href="#">TIN TỨC - SỰ KIỆN</a>
+        <a class="menutrai" href="#">TUYỂN SINH</a>
+        <a class="menutrai" href="#">CÔNG KHAI GIÁO DỤC</a>
+        <a class="menutrai" href="#">CƠ CẤU TỔ CHỨC</a>
+        <a class="menutrai" href="#">LIÊN KẾT</a>
+      </nav>
+    </div>
+  </div>
+
+</body>
+</html>
